@@ -21,7 +21,7 @@ public class UpdateRunnerPos {
     private static void updateRunnerPos() {
         EntityPlayerMP target = MinecraftServer.getServer().getConfigurationManager().getPlayerEntity(runner);
         if (target != null) {
-            AddonHandler.logMessage("New target location for " + runner + " at X:" + target.posX + " Y:" + target.posZ + " Dimension:" + target.dimension);
+            AddonHandler.logMessage("New target location for " + runner + " at X:" + target.posX + " Z:" + target.posZ + " Dimension:" + target.dimension);
             targetX = (int) Math.floor(target.posX);
             targetZ = (int) Math.floor(target.posZ);
             targetDimension = target.dimension;
