@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.fabricmc.tmrg.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityAccessor",
+    "EntityPlayerMPMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

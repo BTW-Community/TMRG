@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "tmrg",
+  "version": "${version}",
+  "name": "Trance Mod for Racing Game",
+  "description": "Hunt your friends for content",
+  "authors": [
+    "Polar Onyx"
+  ],
+  "contact": {
+    "homepage": "https://github.com/BTW-Community/Craftable-Eyes",
+    "sources": "https://github.com/BTW-Community/Craftable-Eyes"
+  },
+
+  "license": "MIT",
+  "icon": "tmrg/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.tmrg.tmrgMod"
+    ],
+    "btw:addon": [
+      "btw.community.tmrg.tmrgAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "TA"
+  },
+  "mixins": [
+    "tmrg.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}
+
